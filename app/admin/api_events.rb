@@ -13,7 +13,7 @@ ActiveAdmin.register Api::Event do
 # end
 #
 permit_params do
-  permitted = [:name]
+  permitted = [:name, :date]
 end
 
 end

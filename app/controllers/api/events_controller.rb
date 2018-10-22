@@ -48,6 +48,6 @@ class Api::EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def api_event_params
-      params.require(:api_event).permit(:name)
+      params.require(:api_event).permit(:name, :date)
     end
 end

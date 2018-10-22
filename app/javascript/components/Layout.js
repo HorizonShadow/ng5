@@ -11,6 +11,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import NavButtons from "./NavButtons";
 
 const drawerWidth = 240;
 const styles = theme => ({
@@ -93,7 +94,7 @@ class Layout extends React.Component {
 
   render () {
     const { classes, theme } = this.props;
-    return (
+    return(
       <div className={classes.root}>
         <AppBar
           position="absolute"
@@ -109,7 +110,7 @@ class Layout extends React.Component {
               <MenuIcon />
             </IconButton>
             <Typography variant="title" color="inherit" noWrap>
-              Mini variant drawer
+              Nocturnal Gamers Schedule
             </Typography>
           </Toolbar>
         </AppBar>
@@ -125,7 +126,7 @@ class Layout extends React.Component {
               {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
             </IconButton>
           </div>
-          <Divider />
+          <NavButtons />
         </Drawer>
         <main className={classes.content}>
           <div className={classes.toolbar} />
