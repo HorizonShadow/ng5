@@ -8,7 +8,6 @@ import { ApolloProvider } from 'react-apollo';
 import { createMuiTheme } from '@material-ui/core/styles';
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 
-console.log(document.querySelector('meta[name="csrf-token"]').content);
 const client = new ApolloClient({
   uri: '/graphql',
   request: e => {
@@ -37,9 +36,9 @@ class App extends React.Component {
         <MuiThemeProvider theme={theme}>
           <Router>
             <Layout>
-              {/*<Switch>*/}
-                {/*<Route exact path={'/events'} component={EventRoutes} />*/}
-              {/*</Switch>*/}
+              <Switch>
+                <Route exact path={'/events'} component={EventRoutes} />
+              </Switch>
             </Layout>
           </Router>
         </MuiThemeProvider>
