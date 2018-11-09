@@ -95,7 +95,6 @@ GEM
       railties (>= 4.1.0, < 6.0)
       responders
       warden (~> 1.2.3)
-    duktape (2.0.1.0)
     erubi (1.7.1)
     execjs (2.7.0)
     ffi (1.9.25)
@@ -138,6 +137,7 @@ GEM
       activerecord
       kaminari-core (= 1.1.1)
     kaminari-core (1.1.1)
+    libv8 (6.7.288.46.1)
     loofah (2.2.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -149,6 +149,8 @@ GEM
     mimemagic (0.3.2)
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
+    mini_racer (0.2.4)
+      libv8 (>= 6.3)
     minitest (5.11.3)
     msgpack (1.2.4)
     msgpack (1.2.4-x86-mingw32)
@@ -272,10 +274,10 @@ DEPENDENCIES
   capybara (>= 2.15)
   coffee-rails (~> 4.2)
   devise
-  duktape
   graphiql-rails
   graphql
   jbuilder (~> 2.5)
+  mini_racer
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   rails (~> 5.2.1)
@@ -292,4 +294,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.5
+   1.17.1

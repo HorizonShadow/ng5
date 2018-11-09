@@ -16,7 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-gem 'duktape'
+gem 'mini_racer'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -57,7 +57,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'activeadmin'
 gem 'devise'
+gem 'graphiql-rails', group: :development
 gem 'graphql'
 gem 'react-rails'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'graphiql-rails', group: :development
