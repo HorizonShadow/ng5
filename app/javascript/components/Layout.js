@@ -13,7 +13,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import CssBaseline from "@material-ui/core/CssBaseline/CssBaseline";
-//import NavButtons from "./NavButtons";
+import NavButtons from "./NavButtons";
 
 const drawerWidth = 240;
 const styles = theme => ({
@@ -137,7 +137,7 @@ class Layout extends React.Component {
                                     {theme.direction === 'rtl' ? <ChevronRightIcon/> : <ChevronLeftIcon/>}
                                 </IconButton>
                             </div>
-                            {/*<NavButtons />*/}
+                            <NavButtons />
                         </Drawer>
                         <main className={classes.content}>
                             <div className={classes.toolbar}/>
